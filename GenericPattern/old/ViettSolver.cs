@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace GenericPattern
 {
-    internal class ViettSolver : EquationSolver
-    {
-        public override (bool successful, double x1, double x2) FindSolution(double a, double b, double c)
-        {
+    //internal class ViettSolver : EquationSolver
+    //{
+    //    public override (bool successful, double x1, double x2) FindSolution(double a, double b, double c)
+    //    {
             
-        }
-    }
+    //    }
+    //}
 }
