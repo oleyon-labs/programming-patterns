@@ -5,8 +5,11 @@
 
 namespace AbstractFactoryPattern
 {
-    public abstract class AbstractFactory
+    public interface IFactory
     {
+        public ICarColor CreateCarColor();
+
+        public IEngine CreateEngine();
 
     }
 }

@@ -7,9 +7,15 @@ namespace AbstractFactoryPattern
 {
     internal class Client
     {
-        public Client(AbstractFactory abstractFactory)
+        public IFactory factory;
+        public Client(IFactory abstractFactory)
         {
+            factory = abstractFactory;
+        }
 
+        public Car ProvideCar()
+        {
+            return new Car(factory.CreateCarColor(),factory.CreateEngine());
         }
     }
 }

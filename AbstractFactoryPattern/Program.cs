@@ -8,6 +8,9 @@ class Program
 {
     public static void Main(string[] args)
     {
-        Client client;
+        Client client = new Client(new Factory1());
+        Console.WriteLine(client.ProvideCar());
+        client.factory = new Factory2();
+        Console.WriteLine(client.ProvideCar());
     }
 }

@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace AbstractFactoryPattern
 {
-    internal class ICar
+    internal class V4Engine : IEngine
     {
+        public V4Engine()
+        {
+            Engine = "V4";
+        }
 
+        public string Engine { get; }
     }
 }
